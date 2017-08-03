@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% if(message) { %>
+      <div><%= message %></div>
+    <% } %>
+    <form action="/login3" method="post">
+      <input type="username" id="username" name="username" />
+      <input type="password" id="password" name="password" />
+      <input type="submit" id="submit" value="log in" />
+    </form>
+  </body>
+</html>
